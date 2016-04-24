@@ -1,0 +1,115 @@
+
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+body {
+  font-family: "Oswald-Regular";
+  background-color: #ffffff;
+}
+/* Fonts
+-------------------------------------------------- */
+@font-face {
+    font-family: "Oswald-Regular";
+    src: url(../fonts/Oswald-Regular.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+/* custom presets
+-------------------------------------------------- */
+.overflow-h{overflow: hidden;}
+.text-white{color: #ffffff;}
+.text-black{color: #000000;}
+.clearboth{clear: both;}
+.marginBottom20{margin-bottom: 20px;}
+
+::-webkit-input-placeholder {
+   color: #ffffff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #ffffff;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #ffffff;  
+}
+
+:-ms-input-placeholder {  
+   color: #ffffff;  
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  margin-top: 40px;
+}
+
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+  position: relative;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-inverse{background-color: transparent;border-color:transparent;}
+.nav-menu{position: absolute;top: 4px;right: 0;}
+.navbar-inverse .navbar-brand{color: #ffffff;}
+.navbar-brand{font-size: 20px;color: #ffffff;padding: 0;margin: 0;}
+.carousel-control{display: none;}
+.logo{width: 232px;height: 475px;position: absolute;top: 20%;left: 10%;z-index: 9999;}
+.carousel-inner > .item > img {min-width: 100%;min-height: 100%;}
+.main-content{position: relative;}
+.carousel-caption{top: 38%;width: 600px;left: 50%;margin-left: -300px;text-align: left;}
+.carousel-caption p .btn.btn.btn-primary{width: 160px;height: 58px;line-height:58px;background-color: #e92121;border-radius: 0;border: none;padding: 0;
+  margin: 0;font-family: Arial,Sans-serif;}
+.carousel-caption p.text{font-size: 25px;font-family: "Oswald-Regular",Arial,Sans-serif;}
+.services-section{padding: 30px 0 0 0;margin: 0 0 60px 0;}
+.products-column{margin: 25px 0 0 0;}
+.title{font-family: "Oswald-Regular",Arial,Sans-serif;font-size: 30px;}
+.description{font-family: "OpenSans-Light",Arial,Sans-serif;font-size: 15px;margin-bottom: 30px;}
+.services-section .service-name {background-color: #f0f0f0;
+  text-align: center;padding: 20px 10px;position: relative;min-height: 210px;}
+.services-section .service-name .learn-more-btn{font-family: "OpenSans-Bold",Arial,Sans-serif;width: 130px;margin-left: -65px;
+position: absolute;left: 50%;bottom:-15px;border: 1px solid #dddddd;border-radius: 0;}
+.aboutus-section{background-color: #e3000f;padding: 40px 0;color: #ffffff;}
+.contact-section{text-align: center;;background: url(../images/contactus.jpg) 0 0 no-repeat #000000;
+background-size: 100% 100%;padding: 30px 0;}
+.contact-section .form-inline .form-group{display: block;margin-bottom: 15px;padding-left: 0;}
+.contact-section .form-inline .form-control{width: 100%;display: block;border-radius: 0;
+  background: transparent;border: 1px solid #ffffff;color: #ffffff;}
+.footer{height: 90px;background-color: #1f1a1e;line-height: 90px;}
+.footer ul{list-style-type: none;text-align: center;margin-bottom: 0;}
+.footer ul li{display: inline;margin-right: 25px;}
+.footer ul li a{color: #939393;text-transform: uppercase;font-family: "Oswald-Regular",Arial,Sans-serif;
+font-size: 15px;text-decoration: none;}
+.footer ul li a:hover{color: #ff3b3b;border-bottom:2px solid #ff3b3b;}
+.avatar img{width: 100%;}
+.text-danger{display: none;}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media screen and (max-width: 992px){
+  .services-section .service-name:nth-child(1){margin-bottom: 35px;}
+}
+@media screen and (max-width: 449px){
+  .footer ul li{margin-right: 10px;}
+  .footer ul li a{font-size:11px; }
+}
+
