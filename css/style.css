@@ -71,10 +71,10 @@ body {
 .logo{width: 232px;height: 475px;position: absolute;top: 20%;left: 8%;z-index: 9999;}
 .carousel-inner > .item > img {min-width: 100%;min-height: 100%;}
 .main-content{position: relative;}
-.carousel-caption{top: 38%;width: 600px;left: 50%;margin-left: -273px;text-align: left;}
+.carousel-caption{top: 38%;width: 700px;left: 50%;margin-left: -273px;text-align: left;}
 .carousel-caption p .btn.btn.btn-primary{width: 160px;height: 58px;line-height:58px;background-color: #e92121;border-radius: 0;border: none;padding: 0;
   margin: 0;font-family: Arial,Sans-serif;}
-.carousel-caption p.text{font-size: 25px;font-family: "Oswald-Regular",Arial,Sans-serif;margin-bottom: 25px;}
+.carousel-caption p.text{font-size: 28px;font-family: "Oswald-Regular",Arial,Sans-serif;margin-bottom: 25px;}
 
 /* SERVICES SECTION
 -------------------------------------------------- */
@@ -170,6 +170,7 @@ font-size: 15px;text-decoration: none;}
     .aboutus-section .abs-left .col-xs-4{width: 100%;margin-bottom: 10px;}
     .aboutus-section .abs-left .title{margin-bottom: 0;}
     .aboutus-section .abs-right{width: 100%;}
+    .navbar-brand{font-size: 15px;}
 }
 @media screen and (max-width: 449px){
     .footer ul li{margin-right: 10px;}
