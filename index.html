@@ -103,13 +103,13 @@
     	</div>
     	<div class="container-fluid aboutus-section clearboth">
     		<div class="container">
-    			<div class="col-lg-12 col-md-12">
+    			<div class="col-lg-12 col-md-12 abs-left">
     				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
     					<div class="avatar overflow-h">
     						<img src="images/aboutus.jpg" alt="office-icon" class="img-responsive">
     					</div>
     				</div>
-    				<div class="col-lg-8 col-md-8 col-sm-8  col-xs-8 text-white">
+    				<div class="col-lg-8 col-md-8 col-sm-8  col-xs-8 text-white abs-right">
     					<p class="title text-uppercase">About us</p>
     					<div class="description">
     						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed egestas sem. Phasellus eget risus non quam efficitur vulputate sit amet ac odio. Aenean placerat leo et consectetur tincidunt. Aenean aliquam congue pellentesque. Maecenas elementum lacinia erat, sit amet ultrices nisi volutpat quis.</p>
@@ -174,54 +174,5 @@
     </footer>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript">
- // $(function(){
- //    $('#contact_us').on('submit',function(){
- //        var self = this,
- //            fullName = $.trim($("#fullname").val()),
- //            company = $.trim($("#company").val()),
- //            phone_no = $.trim($("#phone_no").val()),
- //            email = $.trim($("#email").val()),
- //            message = $("#message").val(),
- //            err = false,
- //            phone_no_regex = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/,
- //            email_regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
- //            post_data = null;
-        
- //        $(self).find('#btnsubmit').prop('disabled',true);
- //        $(".text-danger").hide();
- //        if(!fullName){
- //            $("#fullname").siblings('.text-danger').show();
- //            err = true;
- //        }
- //        if (!phone_no || !phone_no_regex.test(phone_no)) {
- //            $("#phone_no").siblings('.text-danger').show();
- //            err = true;
- //        }
- //        if (!email || !email_regex.test(email)) {
- //            $("#email").siblings('.text-danger').show();
- //            err = true;
- //        }
-        
- //        if(!err){
- //            post_data = {
- //                fullName : fullName,
- //                company : company,
- //                phone_no : phone_no,
- //                email: email,
- //                message : message,
- //                message_body: "Name: "+fullName+"<br> Company: "+company+"<br> Phone Number: "+phone_no + "<br> Email: "+ email + "<br> City: "+ city + "<br> Country: "+ country +"<br> Address: "+ address +"<br> Products: "+ products+ "<br> Comments: "+ message
- //            }
- //        }
- //        return true;
- //    });
- // 	});
-$( window ).resize(function() {
-  var $width = $(window).width();
-  var $imageWidth = $("#logo").width();
-	   $("#logo img").css({'top':'1px','width':'200px'});
-	  console.log("hi");
-	});
-  </script>
 </body>
 </html>
