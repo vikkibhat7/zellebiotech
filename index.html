@@ -48,7 +48,7 @@
 	        	<li data-target="#myCarousel" data-slide-to="1"></li>
 	     	</ol>
 	      <div class="carousel-inner" role="listbox">
-	      	<div class="logo"><img src="images/logo.png" alt="logo" width="200"></div>
+	      	<div class="logo" id="logo"><img src="images/logo.png" alt="logo" ></div>
 	        <div class="item active">
 	          	<img class="first-slide img-responsive" src="images/slide.jpg" alt="First slide" >
 	          	<div class="carousel-caption">
@@ -80,17 +80,21 @@
     			<p class="text-uppercase text-center title">Our Services</p>
 	    		<p class="text-center description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet dapibus eros, ut pulvinar erat. Morbi mollis arcu in leo tincidunt molestie. Sed eget nisi a felis lobortis pretium. Vestibulum vestibulum felis eget finibus mattis. Sed sit amet ipsum quis</p>
 	    		<div class="col-lg-12 col-md-12 products-column">
-	    			<div class="col-lg-6 col-md-6 col-sm-6 ">
+	    			<div class="col-lg-6 col-md-6 col-sm-6 inner-column">
+	    				<span class="btnBefore"></span>
+    					<span class="btnAfter"></span>
 		    			<div class="service-name">
 		    				<p><img src="images/office-icon.png" alt="office-icon"></p>
-		    				<p>Donec rhoncus vestibulum mi vitae sagittis. Mauris venenatis lorem vitae molestie cursus.</p>
+		    				<p class="service-title">Products And Outsourced Services</p>
+		    				<p class="desc">Donec rhoncus vestibulum mi vitae sagittis. Mauris venenatis lorem vitae molestie cursus.Donec rhoncus vestibulum mi vitae sagittis. Mauris venenatis lorem vitae molestie cursus.</p>
 		    				<p><a class="btn btn-default text-capitalize learn-more-btn" href="#" role="button">Learn More</a></p>
 		    			</div>
 	    			</div>
-		    		<div class="col-lg-6 col-md-6 col-sm-6 ">
+		    		<div class="col-lg-6 col-md-6 col-sm-6 inner-column">
 		    			<div class="service-name">
 		    				<p><img src="images/lab-icon.png" alt="lab-icon"></p>
-		    				<p>Donec rhoncus vestibulum mi vitae sagittis. Mauris venenatis lorem vitae molestie cursus.</p>
+		    				<p class="service-title">Inhouse Laboratory Services</p>
+		    				<p class="desc">Donec rhoncus vestibulum mi vitae sagittis. Mauris venenatis lorem vitae molestie cursus.Donec rhoncus vestibulum mi vitae sagittis. Mauris venenatis lorem vitae molestie cursus.</p>
 		    				<p><a class="btn btn-default text-capitalize learn-more-btn" href="#" role="button">Learn More</a></p>
 		    			</div>
 		    		</div>
@@ -100,12 +104,12 @@
     	<div class="container-fluid aboutus-section clearboth">
     		<div class="container">
     			<div class="col-lg-12 col-md-12">
-    				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-    					<div class="avatar overflow-h marginBottom20">
+    				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    					<div class="avatar overflow-h">
     						<img src="images/aboutus.jpg" alt="office-icon" class="img-responsive">
     					</div>
     				</div>
-    				<div class="col-lg-8 col-md-8 col-sm-8  col-xs-12text-white">
+    				<div class="col-lg-8 col-md-8 col-sm-8  col-xs-8 text-white">
     					<p class="title text-uppercase">About us</p>
     					<div class="description">
     						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed egestas sem. Phasellus eget risus non quam efficitur vulputate sit amet ac odio. Aenean placerat leo et consectetur tincidunt. Aenean aliquam congue pellentesque. Maecenas elementum lacinia erat, sit amet ultrices nisi volutpat quis.</p>
@@ -146,7 +150,7 @@
 				  		<p class='text-danger'>Please Enter Message.</p>
 				  	</div>
 			
-				  	<p><input id="btnsubmit" class="btn btn-default text-capitalize learn-more-btn" type="submit" value="Submit"></p>
+				  	<p><input id="btnsubmit" class="btn btn-default text-capitalize submit-btn" type="submit" value="Submit"></p>
 				  	<div class="form-group hide">
 		                <label class="col-sm-2"></label>
 		                <div class="col-sm-6">
@@ -212,6 +216,12 @@
  //        return true;
  //    });
  // 	});
- //   </script>
+$( window ).resize(function() {
+  var $width = $(window).width();
+  var $imageWidth = $("#logo").width();
+	   $("#logo img").css({'top':'1px','width':'200px'});
+	  console.log("hi");
+	});
+  </script>
 </body>
 </html>
